@@ -1,0 +1,9 @@
+Put Libs here
+
+0Harmony.dll
+BepInEx.dll
+Assembly-CSharp.dll
+UnityEngine.dll
+Unity.Netcode.Runtime.dll
+UnityEngine.CoreModule.dll
+UnityEngine.Physics2DModule.dll
