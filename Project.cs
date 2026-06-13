@@ -10,7 +10,7 @@ namespace ToggleEnemies
     {
         private const string ModGuid = "SpiralMods." + ModName;
         private const string ModName = "ToggleEnemies";
-        private const string ModVersion = "1.0.8";
+        private const string ModVersion = "1.0.9";
 
         private readonly Harmony _harmony = new Harmony(ModGuid);
 
@@ -19,7 +19,7 @@ namespace ToggleEnemies
         public static ManualLogSource logger = BepInEx.Logging.Logger.CreateLogSource(ModGuid);
         
 
-        public static BepInEx.Configuration.ConfigEntry<bool> RemoveSnareFlea, RemoveBunkerSpider, RemoveLootBug, RemoveBracken, RemoveThumper, RemoveSlime, RemoveDressGirl, RemovePuffer, RemoveNutcracker, RemoveCoilHead, RemoveJester, RemoveMasked, RemoveMouthDog, RemoveGiant, RemoveWorm, RemoveBaboonHawk, RemoveOldBird, RemoveButler, RemoveFlowerSnake, RemoveBarber, RemoveFox, RemoveLasso, RemoveCadaver;
+        public static BepInEx.Configuration.ConfigEntry<bool> RemoveSnareFlea, RemoveBunkerSpider, RemoveLootBug, RemoveBracken, RemoveThumper, RemoveSlime, RemoveDressGirl, RemovePuffer, RemoveNutcracker, RemoveCoilHead, RemoveJester, RemoveMasked, RemoveMouthDog, RemoveGiant, RemoveWorm, RemoveBaboonHawk, RemoveOldBird, RemoveButler, RemoveFlowerSnake, RemoveBarber, RemoveFox, RemoveLasso, RemoveCadaver, RemovePuma, RemoveGiantKiwi, RemoveStingray;
 
         void Awake()
         {
@@ -60,7 +60,10 @@ namespace ToggleEnemies
             ToggleEnemiesBase.RemoveBarber = this.Config.Bind<bool>("Settings (Restart Required)", "Disable Barbers", false, "If true, barbers won't ever spawn!");
             ToggleEnemiesBase.RemoveFox = this.Config.Bind<bool>("Settings (Restart Required)", "Disable Kidnapper Foxes", false, "If true, foxes won't ever spawn!");
             ToggleEnemiesBase.RemoveLasso = this.Config.Bind<bool>("Settings (Restart Required)", "Disable Lasso Man", false, "If true, lasso Man won't spawn during modded!");
-            ToggleEnemiesBase.RemoveCadaver = this.Config.Bind<bool>("Settings (Restart Required)", "Disable Lasso Man", false, "If true, cadavers won't ever spawn!");
+            ToggleEnemiesBase.RemoveCadaver = this.Config.Bind<bool>("Settings (Restart Required)", "Disable Cadaver", false, "If true, cadavers won't ever spawn!");
+            ToggleEnemiesBase.RemoveGiantKiwi = this.Config.Bind<bool>("Settings (Restart Required)", "Disable Giant Kiwi", false, "If true, Giant Kiwi won't ever spawn!");
+            ToggleEnemiesBase.RemovePuma = this.Config.Bind<bool>("Settings (Restart Required)", "Disable Feiopar", false, "If true, Feiopar won't ever spawn!");
+            ToggleEnemiesBase.RemoveStingray = this.Config.Bind<bool>("Settings (Restart Required)", "Disable Backwater Gunkfish", false, "If true, Backwater Gunkfish won't ever spawn!");
         }
     }
 }

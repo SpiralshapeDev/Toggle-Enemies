@@ -64,6 +64,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Patches\PumaPatch.cs" />
+    <Compile Include="Patches\GiantKiwiPatch.cs" />
+    <Compile Include="Patches\StingrayPatch.cs" />
     <Compile Include="Patches\BarberPatch.cs" />
     <Compile Include="Patches\ButlerBeesPatch.cs" />
     <Compile Include="Patches\BushWolfPatch.cs" />

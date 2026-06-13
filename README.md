@@ -3,6 +3,9 @@
 # Releases
 
 
+## Version 1.0.9
+Fixed Feiopar, Giant Sapsucker & Backwater gunkfish not being in entity removal list!
+
 ## Version 1.0.8
 Updated mod to V.80 Update!
 
